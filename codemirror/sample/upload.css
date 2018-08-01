@@ -1,0 +1,9 @@
+.dvStatus { font-size: 18px; padding: 4px 4px 0 4px; }
+.dvSuccess { color: #006600; }
+.dvFail { color: #ff0000; }
+.dvWarn { color: #ffa64d; }
+.bckLink { display:block; padding: 4px; font-size: 18px; }
+.upHeader { width: 280px; box-sizing: border-box; padding: 10px; margin: 0 10px; text-align: center; font-size: 24px; }
+.upDiv { width: 280px; box-sizing: border-box; border: 1px solid #ccc; padding: 10px; margin: 0 10px; text-align: left; background-color: #ffffe6; }
+.fileUploadText { font-size: 18px; }
+.fileUploadInput { width:250px; }
