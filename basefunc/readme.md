@@ -4,6 +4,7 @@ Function list:
 =============
 
 <b>Variables</b><br>
+-
 
 BF.strUrl<br>
 BF.strProtocol<br>
@@ -24,12 +25,16 @@ BF.strIsraeliTime<br>
 BF.strShortDate<br>
 BF.strDateGuid<br>
 <br>
+
 <b>Console and Debug</b><br>
----
+-
+
 BF.DebugText (strInput)<br>
 <br>
+
 <b>Encodings & Urls</b><br>
----
+-
+
 BF.UrlEncode (strInput)<br>
 BF.UrlDecode (strInput)<br>
 BF.HtmlCharsEncode (htmlInput)<br>
@@ -37,8 +42,10 @@ BF.HtmlCharsDecode (htmlInput)<br>
 BF.JsonCreate (arrInput)<br>
 BF.JsonParse (strInput)<br>
 <br>
+
 <b>String Actions</b><br>
----
+-
+
 BF.IsSet (objVar)<br>
 BF.IsNull (objVar)<br>
 BF.IsEmpty (objVar)<br>
@@ -75,15 +82,20 @@ BF.Base64Encode (strInput)<br>
 BF.Base64Decode (strInput)<br>
 BF.Md5 (strInput)<br>
 <br>
+
 <b>Safe Input</b><br>
----
+-
+
 BF.IsValidDomain (strInput)<br>
 BF.IsValidEmail (strInput)<br>
 BF.HtmlToText (htmlInput)<br>
 BF.TextToSafeUri (strInput)<br>
 BF.TextToSafeMetaValue (strInput)<br>
 <br>
-// Dates<br>
+
+<b>Dates</b><br>
+-
+
 BF.ToDate (strDateTime)<br>
 BF.TextDate (dtDateTime)<br>
 BF.TextTime (dtDateTime)<br>
@@ -96,39 +108,51 @@ BF.IsraeliDate (dtDateTime)<br>
 BF.IsraeliTime (dtDateTime)<br>
 BF.ShortDate (dtDateTime)<br>
 <br>
+
 <b>Random</b><br>
----
+-
+
 BF.Rand (iLow, iHigh, iPointDigits)<br>
 BF.GuidV4 ()<br>
 <br>
+
 <b>Query String and Cookies</b><br>
----
+-
+
 BF.GetQsVar (strFieldName)<br>
 BF.SetCookieVar (name,value,days)<br>
 BF.GetCookieVar (name)<br>
 BF.PurgeCookie (name)<br>
 <br>
+
 <b>Ajax</b><br>
----
+-
+
 BF.CreateHttpObject () <br>
 BF.HttpGetRequest (fileName,okFunc,failFunc)<br>
 BF.HttpPostRequest (fileName,postData,okFunc,failFunc)<br>
 BF.FormSerialize (elmForm)<br>
 <br>
+
 <b>HTML DOM</b><br>
----
+-
+
 BF.AddElementToDom (elmRoot, elmType, strId, strClass,strTitle, strStyle, strOnclick)<br>
 BF.ElementEvent (elem, eventName, eventFunc)<br>
 BF.FuncOnElements (cssSlctr, func /* elm, idx */)<br>
 BF.hideElements (cssSlctr)<br>
 BF.showElements (cssSlctr)<br>
 <br>
+
 <b>Async Load</b><br>
----
+-
+
 BF.LoadAsyncCss (strCssLink)<br>
 BF.LoadAsyncJs (strJsLink, okFunc)<br>
 <br>
+
 <b>Redirects</b><br>
----
+-
+
 BF.Redirect (strUrl)<br>
 BF.Stop ()<br>
