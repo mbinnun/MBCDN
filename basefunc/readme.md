@@ -3,122 +3,121 @@ A library with some basic functions to enhance JavaScript abilities
 Function list:
 =============
 
-// Variables
-BF.strUrl
-BF.strProtocol
-BF.strDomain
-BF.strUriClean
-BF.strHash
-BF.strQs
-BF.dtNow
-BF.strDate
-BF.strTime
-BF.strTimeSec
-BF.strDbStyleDate
-BF.strDbStyleDateTime
-BF.strAmericanDate
-BF.strEuropeanDate
-BF.strIsraeliDate
-BF.strIsraeliTime
-BF.strShortDate
-BF.strDateGuid
-
-// Console and Debug
-BF.DebugText (strInput)
-
-// Encodings & Urls
-BF.UrlEncode (strInput)
-BF.UrlDecode (strInput)
-BF.HtmlCharsEncode (htmlInput)
-BF.HtmlCharsDecode (htmlInput)
-BF.JsonCreate (arrInput)
-BF.JsonParse (strInput)
-
-// String Actions
-BF.IsSet (objVar)
-BF.IsNull (objVar)
-BF.IsEmpty (objVar)
-BF.IsNumeric (n)
-BF.IsArray (arrInput)
-BF.IsObject (objInput)
-BF.ToString (strInput)
-BF.ToInt (strInput)
-BF.ToIntRounded (strInput)
-BF.ToFloat (strInput)
-BF.ToFloatRounded (strInput, iPercisionDigits)
-BF.Replace (strInput, strFind, strReplace)
-BF.ReplaceFirst (strInput, strFind, strReplace)
-BF.ReplaceLast (strInput, strFind, strReplace)
-BF.TrimMultipleSpaces (strInput)
-BF.Trim (strInput)
-BF.Left (str, n)
-BF.Right (str, n)
-BF.SubString (strInput, iFrom, iCount)
-BF.CharAt (str, n)
-BF.IndexOf (strInput, strFind)
-BF.Contains (strInput, strFind)
-BF.StartsWith (strInput, strFind)
-BF.EndsWith (strInput, strFind)
-BF.LowerCase (strInput)
-BF.UpperCase (strInput)
-BF.Split (strInput, strSplitter)
-BF.BeforeFirstSplit (strInput, strSplitter)
-BF.AfterFirstSplit (strInput, strSplitter)
-BF.BeforeLastSplit (strInput, strSplitter)
-BF.AfterLastSplit (strInput, strSplitter)
-BF.Length (strInput)
-BF.Base64Encode (strInput)
-BF.Base64Decode (strInput)
-BF.Md5 (strInput)
-
-// Safe Input
-BF.IsValidDomain (strInput)
-BF.IsValidEmail (strInput)
-BF.HtmlToText (htmlInput)
-BF.TextToSafeUri (strInput)
-BF.TextToSafeMetaValue (strInput)
-
-// Dates
-BF.ToDate (strDateTime)
-BF.TextDate (dtDateTime)
-BF.TextTime (dtDateTime)
-BF.TimeSec (dtDateTime)
-BF.DbStyleDate (dtDateTime)
-BF.DbStyleDateTime (dtDateTime)
-BF.AmericanDate (dtDateTime)
-BF.EuropeanDate (dtDateTime)
-BF.IsraeliDate (dtDateTime)
-BF.IsraeliTime (dtDateTime)
-BF.ShortDate (dtDateTime)
-
-// Random
-BF.Rand (iLow, iHigh, iPointDigits)
-BF.GuidV4 ()
-
-// Query String and Cookies
-BF.GetQsVar (strFieldName)
-BF.SetCookieVar (name,value,days)
-BF.GetCookieVar (name)
-BF.PurgeCookie (name)
-
-// Ajax
-BF.CreateHttpObject () 
-BF.HttpGetRequest (fileName,okFunc,failFunc)
-BF.HttpPostRequest (fileName,postData,okFunc,failFunc)
-BF.FormSerialize (elmForm)
-
-// HTML DOM
-BF.AddElementToDom (elmRoot, elmType, strId, strClass,strTitle, strStyle, strOnclick)
-BF.ElementEvent (elem, eventName, eventFunc)
-BF.FuncOnElements (cssSlctr, func /* elm, idx */)
-BF.hideElements (cssSlctr)
-BF.showElements (cssSlctr)
-
-// Async Load
-BF.LoadAsyncCss (strCssLink)
-BF.LoadAsyncJs (strJsLink, okFunc)
-
-// Redirects
-BF.Redirect (strUrl)
-BF.Stop ()
-
+// Variables<br>
+BF.strUrl<br>
+BF.strProtocol<br>
+BF.strDomain<br>
+BF.strUriClean<br>
+BF.strHash<br>
+BF.strQs<br>
+BF.dtNow<br>
+BF.strDate<br>
+BF.strTime<br>
+BF.strTimeSec<br>
+BF.strDbStyleDate<br>
+BF.strDbStyleDateTime<br>
+BF.strAmericanDate<br>
+BF.strEuropeanDate<br>
+BF.strIsraeliDate<br>
+BF.strIsraeliTime<br>
+BF.strShortDate<br>
+BF.strDateGuid<br>
+<br>
+// Console and Debug<br>
+BF.DebugText (strInput)<br>
+<br>
+// Encodings & Urls<br>
+BF.UrlEncode (strInput)<br>
+BF.UrlDecode (strInput)<br>
+BF.HtmlCharsEncode (htmlInput)<br>
+BF.HtmlCharsDecode (htmlInput)<br>
+BF.JsonCreate (arrInput)<br>
+BF.JsonParse (strInput)<br>
+<br>
+// String Actions<br>
+BF.IsSet (objVar)<br>
+BF.IsNull (objVar)<br>
+BF.IsEmpty (objVar)<br>
+BF.IsNumeric (n)<br>
+BF.IsArray (arrInput)<br>
+BF.IsObject (objInput)<br>
+BF.ToString (strInput)<br>
+BF.ToInt (strInput)<br>
+BF.ToIntRounded (strInput)<br>
+BF.ToFloat (strInput)<br>
+BF.ToFloatRounded (strInput, iPercisionDigits)<br>
+BF.Replace (strInput, strFind, strReplace)<br>
+BF.ReplaceFirst (strInput, strFind, strReplace)<br>
+BF.ReplaceLast (strInput, strFind, strReplace)<br>
+BF.TrimMultipleSpaces (strInput)<br>
+BF.Trim (strInput)<br>
+BF.Left (str, n)<br>
+BF.Right (str, n)<br>
+BF.SubString (strInput, iFrom, iCount)<br>
+BF.CharAt (str, n)<br>
+BF.IndexOf (strInput, strFind)<br>
+BF.Contains (strInput, strFind)<br>
+BF.StartsWith (strInput, strFind)<br>
+BF.EndsWith (strInput, strFind)<br>
+BF.LowerCase (strInput)<br>
+BF.UpperCase (strInput)<br>
+BF.Split (strInput, strSplitter)<br>
+BF.BeforeFirstSplit (strInput, strSplitter)<br>
+BF.AfterFirstSplit (strInput, strSplitter)<br>
+BF.BeforeLastSplit (strInput, strSplitter)<br>
+BF.AfterLastSplit (strInput, strSplitter)<br>
+BF.Length (strInput)<br>
+BF.Base64Encode (strInput)<br>
+BF.Base64Decode (strInput)<br>
+BF.Md5 (strInput)<br>
+<br>
+// Safe Input<br>
+BF.IsValidDomain (strInput)<br>
+BF.IsValidEmail (strInput)<br>
+BF.HtmlToText (htmlInput)<br>
+BF.TextToSafeUri (strInput)<br>
+BF.TextToSafeMetaValue (strInput)<br>
+<br>
+// Dates<br>
+BF.ToDate (strDateTime)<br>
+BF.TextDate (dtDateTime)<br>
+BF.TextTime (dtDateTime)<br>
+BF.TimeSec (dtDateTime)<br>
+BF.DbStyleDate (dtDateTime)<br>
+BF.DbStyleDateTime (dtDateTime)<br>
+BF.AmericanDate (dtDateTime)<br>
+BF.EuropeanDate (dtDateTime)<br>
+BF.IsraeliDate (dtDateTime)<br>
+BF.IsraeliTime (dtDateTime)<br>
+BF.ShortDate (dtDateTime)<br>
+<br>
+// Random<br>
+BF.Rand (iLow, iHigh, iPointDigits)<br>
+BF.GuidV4 ()<br>
+<br>
+// Query String and Cookies<br>
+BF.GetQsVar (strFieldName)<br>
+BF.SetCookieVar (name,value,days)<br>
+BF.GetCookieVar (name)<br>
+BF.PurgeCookie (name)<br>
+<br>
+// Ajax<br>
+BF.CreateHttpObject () <br>
+BF.HttpGetRequest (fileName,okFunc,failFunc)<br>
+BF.HttpPostRequest (fileName,postData,okFunc,failFunc)<br>
+BF.FormSerialize (elmForm)<br>
+<br>
+// HTML DOM<br>
+BF.AddElementToDom (elmRoot, elmType, strId, strClass,strTitle, strStyle, strOnclick)<br>
+BF.ElementEvent (elem, eventName, eventFunc)<br>
+BF.FuncOnElements (cssSlctr, func /* elm, idx */)<br>
+BF.hideElements (cssSlctr)<br>
+BF.showElements (cssSlctr)<br>
+<br>
+// Async Load<br>
+BF.LoadAsyncCss (strCssLink)<br>
+BF.LoadAsyncJs (strJsLink, okFunc)<br>
+<br>
+// Redirects<br>
+BF.Redirect (strUrl)<br>
+BF.Stop ()<br>
