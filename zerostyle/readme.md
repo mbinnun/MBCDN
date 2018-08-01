@@ -5,18 +5,18 @@ so that styles will be maximum normalized between browsers.<br>
 <b>You may also use the following classes in your code:</b><br>
 -
 
-div.seperator
-div.softseperator
-body.noscroll
-.redtext
-.centertext
-.centerbox
-.floatleft
-.floatright
-.clearboth
-.rtltext
-.rtlbox
-.inlineblock
-.overflowhidden
-.overflowauto
-.borderbox
+div.seperator<br>
+div.softseperator<br>
+body.noscroll<br>
+.redtext<br>
+.centertext<br>
+.centerbox<br>
+.floatleft<br>
+.floatright<br>
+.clearboth<br>
+.rtltext<br>
+.rtlbox<br>
+.inlineblock<br>
+.overflowhidden<br>
+.overflowauto<br>
+.borderbox<br>
