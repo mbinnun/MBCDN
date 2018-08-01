@@ -3,7 +3,9 @@ A library with some basic functions to enhance JavaScript abilities
 Function list:
 =============
 
-<b>Variables</b><hr>
+<b>Variables</b>
+-
+
 BF.strUrl<br>
 BF.strProtocol<br>
 BF.strDomain<br>
