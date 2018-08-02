@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/mbinnun/MBCDN/master/codemirror/sample/upload.min.css?v=1.2"> 
+	<title>File upload</title>
+</head>
+<body style="font-family: arial,verdana,helvetica,sans-serif; font-size: 14px; margin: 0; padding: 0;">
+	<script type="text/javascript">
+		if (window.location.href.indexOf("?") > -1) {
+			var strSuccessMsg = "The file " + "testfile.js" + " has been uploaded successfully.";
+			var strStatus = "<div class='dvStatus dvSuccess'>" + strSuccessMsg + "</div>";
+			strStatus += "<a class='bckLink' href='../filelist.html?showall=1'>&lt;&lt; Go back</a><hr>";
+			document.write(strStatus);
+		}
+	</script>
+	<form action="upload.php.sample.html?path=/mbinnun/MBCDN/master/codemirror/sample/samplefiles" method="post" enctype="multipart/form-data">
+		<div class="upHeader">File Upload</div>
+		<div class="upDiv">
+			<span class="fileUploadText">Choose <?php echo $strAnother; ?> file to upload:</span><hr>
+			<input type="file" name="fileToUpload" id="fileToUpload"><hr>
+			Upload to dir: <input class="fileUploadInput" type="txt" name="path" value="/mbinnun/MBCDN/master/codemirror/sample/samplefiles"><hr>
+			<input class="fileUploadText" type="submit" value="Upload File" name="submit">
+		</div>
+	</form>
+</body>
+</html>
