@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>File List</title>
+		<link rel="icon" href="https://raw.githubusercontent.com/mbinnun/MBCDN/master/favicon.ico" type="image/x-icon" />
+		<script src="https://cdn.rawgit.com/mbinnun/MBCDN/master/basefunc/base-func.min.js"></script>
+	</head>
+	<body>
+		<script>
+			// ==================================================================
+			// File list app version and location
+			var FLISTstrEditorUrl = "https://cdn.rawgit.com/mbinnun/MBCDN/master/codemirror";
+			var FLISTappVersion   = "2.1";
+			// ==================================================================
+			// Locations for file listing
+			var FLISTlocationTop   = "/mbinnun/MBCDN/master/codemirror/sample";                                     // change to site's user-home-directory on the server
+			var FLISTlocationShort = "samplefiles";                                                                 // change to site's root-folder
+			var FLISTlocationWww   = "https://cdn.rawgit.com/mbinnun/MBCDN/master/codemirror/sample/samplefiles";   // change to public site domain (including http/s protocol)
+			var FLISTlocation = FLISTlocationTop+"/"+FLISTlocationShort;
+			// ==================================================================
+			// Alternate API locations (relative)
+			var FLISTapiFileList   = "api/filelist.php";
+			var FLISTapiReadFile   = "api/readfile.php";
+			var FLISTapiSaveFile   = "api/savefile.php";
+			var FLISTapiDeleteFile = "api/deletefile.php";
+			var FLISTapiUpload     = "api/upload.php";
+			var FLISTapiMinifyCss  = "api/minifycss.php";
+			var FLISTapiMinifyJs   = "api/minifyjs.php";
+			var FLISTapiMkDir      = "api/mkdir.php";
+			var FLISTapiRmDir      = "api/rmdir.php";
+			var FLISTapiUnzip      = "api/unzip.php";
+			var FLISTapiZip        = "api/zip.php";
+			// ==================================================================
+			// Alternate Edit link location (relative)
+			var FLISTlinkEdit      = "codemirror.html";
+			// ==================================================================
+			BF.HttpGetRequest("filelist.css",function(a){alert(a);})
+			//BF.LoadAsyncJs(FLISTstrEditorUrl+"/sample/filelist.min.js?v="+FLISTappVersion);
+		</script>
+	</body>
+</html>
