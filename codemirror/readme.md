@@ -1,4 +1,4 @@
-MBinnun's implementation of CodeMirror online text editor.<br>
+MBinnun's implementation of <b>CodeMirror online text editor</b>.<br>
 <br>
 See the basic implementation here:<br>
 https://rawgit.com/mbinnun/MBCDN/master/codemirror/edit.html <br>
