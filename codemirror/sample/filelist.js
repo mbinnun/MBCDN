@@ -414,12 +414,11 @@ FLIST.CreateFileInDir = function(dirId,dirPath)         {
 			var apiCreateFileStr    = JSON.stringify(apiCreateFileResult);
 			FLIST.CreateFileInDirDone(apiCreateFileStr,dirId,dirPath,newFileName,newFilePath,newFileText);
 		} else {
-			BF.HttpPostRequest(FLIST.apiFileList, FLIST.postData, FLIST.ParseFileList);
+			BF.HttpPostRequest(FLIST.apiSaveFile,"path="+encodeURIComponent(newFilePath)+"&text="+encodeURIComponent(newFileText)
+				// creation success
+				,function(strResponse){ FLIST.CreateFileInDirDone(strResponse,dirId,dirPath,newFileName,newFilePath,newFileText); }
+			);
 		}
-		BF.HttpPostRequest(FLIST.apiSaveFile,"path="+encodeURIComponent(newFilePath)+"&text="+encodeURIComponent(newFileText)
-			// creation success
-			,function(strResponse){ FLIST.CreateFileInDirDone(strResponse,dirId,dirPath,newFileName,newFilePath,newFileText); }
-		);
 	}
 };
 FLIST.CreateFileInDirDone = function(strResponse,dirId,dirPath,newFileName,newFilePath,newFileText) {
