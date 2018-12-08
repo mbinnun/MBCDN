@@ -56,7 +56,7 @@ if(isset($_GET["path"]) && $_GET["path"] != "") { $target_dir = $_GET["path"]; }
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/mbinnun/MBCDN/master/codemirror/sample/upload.min.css?v=1.2"> 
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/mbinnun/MBCDN/codemirror/sample/upload.min.css?v=1.2"> 
 	<title>File upload</title>
 </head>
 <body style="font-family: arial,verdana,helvetica,sans-serif; font-size: 14px; margin: 0; padding: 0;">
