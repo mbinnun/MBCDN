@@ -34,6 +34,19 @@ FLIST.apiMkDir      = "mkdir.php";
 FLIST.apiRmDir      = "rmdir.php";
 FLIST.apiUnzip      = "unzip.php";
 FLIST.apiZip        = "zip.php";
+if (BF.strDomain.indexOf("github.io") > -1 && BF.strUrl.indexOf("/sample") > -1) {
+	FLIST.apiFileList   = "filelist.php.sample.json";
+	FLIST.apiReadFile   = "readfile.php.sample.json";
+	FLIST.apiSaveFile   = "savefile.php.sample.json";
+	FLIST.apiDeleteFile = "deletefile.php.sample.json";
+	FLIST.apiUpload     = "upload.php.sample.json";
+	FLIST.apiMinifyCss  = "minifycss.php.sample.json";
+	FLIST.apiMinifyJs   = "minifyjs.php.sample.json";
+	FLIST.apiMkDir      = "mkdir.php.sample.json";
+	FLIST.apiRmDir      = "rmdir.php.sample.json";
+	FLIST.apiUnzip      = "unzip.php.sample.json";
+	FLIST.apiZip        = "zip.php.sample.json";
+}
 if(typeof FLISTapiFileList   !== "undefined") { if (FLISTapiFileList  ) { FLIST.apiFileList   = FLISTapiFileList;   } }
 if(typeof FLISTapiReadFile   !== "undefined") { if (FLISTapiReadFile  ) { FLIST.apiReadFile   = FLISTapiReadFile;   } }
 if(typeof FLISTapiSaveFile   !== "undefined") { if (FLISTapiSaveFile  ) { FLIST.apiSaveFile   = FLISTapiSaveFile;   } }
