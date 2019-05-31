@@ -7,9 +7,9 @@ FLIST.sForm	     = null;
 
 // List location - should be overriden from outside this JS
 FLIST.appVersion    = "1.0";
-FLIST.locationTop   = "/mbinnun/MBCDN/master/codemirror/sample";
+FLIST.locationTop   = "/mbinnun/MBCDN/codemirror/sample";
 FLIST.locationShort = "samplefiles";
-FLIST.locationWww   = "https://rawgit.com/mbinnun/MBCDN/master/codemirror/sample/samplefiles";
+FLIST.locationWww   = "https://mbinnun.github.io/MBCDN/codemirror/sample/samplefiles";
 if(typeof FLISTappVersion    !== "undefined") { if (FLISTappVersion   ) { FLIST.appVersion    = FLISTappVersion;    } }
 if(typeof FLISTlocationTop   !== "undefined") { if (FLISTlocationTop  ) { FLIST.locationTop   = FLISTlocationTop;   } }
 if(typeof FLISTlocationShort !== "undefined") { if (FLISTlocationShort) { FLIST.locationShort = FLISTlocationShort; } }
@@ -20,7 +20,7 @@ if(FLIST.locationTop == "[ROOT]") {
 FLIST.location      = FLIST.locationTop+"/"+FLIST.locationShort;
 if(typeof FLISTlocation      !== "undefined") { if (FLISTlocation     ) { FLIST.location      = FLISTlocation;      } }
 // Editor base url - can be overriden from outside this JS
-FLIST.strEditorUrl = "https://rawgit.com/mbinnun/MBCDN/master/codemirror";
+FLIST.strEditorUrl = "https://mbinnun.github.io/MBCDN/codemirror";
 if(typeof FLISTstrEditorUrl !== "undefined") { if (FLISTstrEditorUrl) { FLIST.strEditorUrl = FLISTstrEditorUrl; } }
 // List API files
 FLIST.apiFileList   = "filelist.php";
@@ -50,7 +50,7 @@ FLIST.linkEdit = "codemirror.html";
 if(typeof FLISTlinkEdit !== "undefined") { if (FLISTlinkEdit ) { FLIST.linkEdit = FLISTlinkEdit; } }
 // Check if a sample
 FLIST.flgSample = false;
-if (BF.strDomain.indexOf("rawgit.com") > -1 && BF.strUrl.indexOf("/sample") > -1) {
+if (BF.strDomain.indexOf("github.io") > -1 && BF.strUrl.indexOf("/sample") > -1) {
 	FLIST.flgSample = true;
 	FLIST.apiUpload = "api/upload.php.sample.html";
 }
