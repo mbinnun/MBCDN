@@ -6,7 +6,7 @@ if(typeof EDITapiSaveFile !== "undefined") { if (EDITapiSaveFile ) { EDITapiSave
 
 // Check if a sample
 EDITflgSample = false;
-if (BF.strDomain.indexOf("rawgit.com") > -1 && BF.strUrl.indexOf("/sample") > -1) {
+if (BF.strDomain.indexOf("github.io") > -1 && BF.strUrl.indexOf("/sample") > -1) {
 	EDITflgSample = true;
 }
 
